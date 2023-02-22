@@ -1,4 +1,4 @@
-const Emitter = require('./emitter');
+const Emitter = require('./1.emitter');
 
 const emitter = new Emitter();
 
