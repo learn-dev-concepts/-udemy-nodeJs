@@ -11,7 +11,9 @@ passport.serializeUser((user, done) => {
 });
 
 passport.deserializeUser((id, done) => {
+  console.log(id, 'id')
   User.findById(id).then(user => {
+    console.log(user,'@')
     done(null, user);
   });
 });
